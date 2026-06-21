@@ -1,0 +1,15 @@
+# Secrets / local config — never commit
+.env
+
+# Claude Code
+.claude
+
+# Locally stored OAuth tokens
+tokens.json
+
+# Dependencies & build output
+node_modules/
+dist/
+
+# OS cruft
+.DS_Store
