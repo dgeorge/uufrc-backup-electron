@@ -8,6 +8,14 @@
     "extraResources": [
       { "from": ".env", "to": ".env" }
     ],
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json",
+      "main.js",
+      "preload.js",
+      "index.html"
+    ],
     "mac": {
       "target": "dmg"
     },
