@@ -12,7 +12,7 @@ Steps to get those values are as follows:
     c. At the end of the process, download a JSON file that contains a "client_id" property and a "client_secret" property
 4. Store those values in the .env file, following the pattern shown in .env.example.
 
-Initially, this app can only be used by the user who created it. The app is configured in "testing" mode, so it can only be executed by explicitly-named Google users. To add a new user, return to the Google Cloud console find the "Google Auth Platform" section, and select the "Audience" subsection. Add the user's gmail address.
+Initially, this app can only be used by the user who created it. The app is configured in "testing" mode, so it can only be executed by explicitly-named Google users. To add a new user, return to the Google Cloud console, find the "Google Auth Platform" section, and select the "Audience" subsection. Add the user's gmail address.
    
 # Building this application
 
