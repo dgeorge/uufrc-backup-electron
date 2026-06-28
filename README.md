@@ -7,9 +7,9 @@ Steps to get those values are as follows:
 1. Go to https://cloud.google.com/cloud-console and create a new application. Ppen that app for configuration.
 2. Visit the "APIs & Services > Enabled APIs & services" section of the cloud console and added the "Google Drive API".
 3. Visit the "APIs & Services > Credentials" section of the cloud console and create an "OAuth 2.0 Client ID"
-  1. Specify that the application type is "Desktop app"
-  2. Set the name to the "UUFRC Backup client" (or whatever you like)
-  3. At the end of the process, download a JSON file that contains a "client_id" property and a "client_secret" property
+    1. Specify that the application type is "Desktop app"
+    2. Set the name to the "UUFRC Backup client" (or whatever you like)
+    3. At the end of the process, download a JSON file that contains a "client_id" property and a "client_secret" property
 5. Store those values in the .env file, following the pattern shown in .env.example.
 
 Initially, this app can only be used by the user who created it. The app is configured in "testing" mode, so it can only be executed by explicitly-named Google users. To add a new user, return to the Google Cloud console, find the "Google Auth Platform" section, and select the "Audience" subsection. Add the user's gmail address.
