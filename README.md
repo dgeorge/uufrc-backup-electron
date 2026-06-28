@@ -1,16 +1,18 @@
 
 # Getting secrets needed to call Google APIs
 
-This application interacts with Google Drive APIs, so it needs a Google-issued CLIENT_ID and CLIENT_SECRET. Those values should be stored in a file called ".env". If that file isn't present, ask an owner of this application for help.
+This application interacts with Google Drive APIs, so it needs a Google-issued CLIENT_ID and CLIENT_SECRET. Those values should be stored in a file called ".env".
 
-If you are an owner for this application, you can get a new client id and client secret by visiting 
-https://cloud.google.com/cloud-console
+Steps to get those values are as follows:
+1. Go to https://cloud.google.com/cloud-console and create a new application. Ppen that app for configuration.
+2. Visit the "APIs & Services > Enabled APIs & services" section of the cloud console and added the "Google Drive API".
+3. Visit the "APIs & Services > Credentials" section of the cloud console and create an "OAuth 2.0 Client ID"
+    a. Specify that the application type is "Desktop app"
+    b. Set the name to the "UUFRC Backup client" (or whatever you like)
+    c. At the end of the process, download a JSON file that contains a "client_id" property and a "client_secret" property
+4. Store those values in the .env file, following the pattern shown in .env.example.
 
-Go to "APIs & Services > Credentials" section of the cloud console and create an "OAuch cient ID"
-* Specify that the application type is "Desktop app"
-* Specify that the name of the application to be "UUFRC Google Drive Backup"
-* At the end of this process, download a JSON file containing a "client_id" property and a "client_secret" property.
-* Store those values in the .env file, following the pattern shown in .env.example.
+Initially, this app can only be used by the user who created it. The app is configured in "testing" mode, so it can only be executed by explicitly-named Google users. To add a new user, return to the Google Cloud console find the "Google Auth Platform" section, and select the "Audience" subsection. Add the user's gmail address.
    
 # Building this application
 
